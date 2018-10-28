@@ -1,0 +1,116 @@
+###
+
+#WEBAPP
+
+***Ajustar e ser compativel com seo
+
+#Tela de boas vindas
+
+#Busca por estado
+	@motrar estados com listas ativas
+	#ter uma url especifica para cada estado
+	
+	@mostrar listas do estado
+		#Descrica lista (regiao)
+		#MesLista
+
+		@mostrar conteudo lista
+			#Data
+			#Serviço
+			#cidade
+
+			@mostrar detalhe conteudo
+				#data
+				#hora
+				#cidade
+				#servico
+				#anciao
+
+			@compartilhar lista (link)
+
+#Sobre nos
+
+#Login
+
+#Newsleaster
+
+#Cancelar newsleaster
+
+#Ser Voluntario para cadastro
+	#nome
+	#email
+	#cidade
+	#tokenValidacao
+	#validado
+
+	@Email confirmado
+	#senha
+
+
+===================================
+#WEBAPP ADMIN
+
+(Apenas administrativo
+#Gerenciador de Usuarios(Gerenciador)
+	#nome
+	#user
+	#senha
+	#cidade
+	#email
+	#administrativo
+
+(Demais)
+#CRUD de Igrejas
+	#Descricao
+	#Cidade
+	#Estado
+
+#CRUD Listas (deverá ser aprovado por um adm)
+	
+	(Inserido manualmente)
+	#Estado
+	#Descricao(Regiao)-(deverá ser inserida manualmente)
+	#MesLista
+	#Cidade
+	#TipoServico
+	#Igreja (@Opcao de CRUD)
+	#Data(Inserido manualmente)
+	#Horario(Inserido manualmente)
+	#Ancião(Inserido manualmente)
+	
+	@Gerado automaticamente
+	#UsuarioCadastro
+	#UsuarioAutorizador
+	#Gerar uma url amigavel (https://listaccb.com/listas-de-batismo/123/sao-paulo-regiao-de-ribeirao-preto-outubro-2017)
+	#Gerar um title
+	#Gerar description
+	#Aprovada(false)
+	#Ativa
+	#LinkPDF(Se tiver) - (@Opcao de upload)
+
+	(Apenas Administrativo)
+	@Adm autoriza a lista
+	CRUD de lista
+	Aprovada = true
+
+
+#Gerenciador de Emails
+	#Assunto
+	#Texto
+
+	@Enviar para usuarios
+		#Estados
+		#Cidades
+
+#Email Envios automaticos
+	#Validar cadastro (@acessar link token)
+	#Confirmacao cadastro
+	
+	#Usuario com pouco acesso (30 dias)
+	#Usuario com muitas listas cadastradas (30 dias)
+	#lista para ser aprovada
+	#lista aprovada
+	#Usuario que acessou poucas vezes
+
+	#NEWSLEASTER nova lista no estado (se tiver inscrito)
+

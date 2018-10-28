@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filamento</title>
+    <link rel="stylesheet" href="/static/elias.css">
+    <link rel="stylesheet" href="/static/w3-colors-metro.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="/static/imgs/devs/favicon.ico " type="image/x-icon"/>
+    <link rel="shortcut icon" href="/static/imgs/devs/favicon.ico" type="image/x-icon"/>
+    <style>
+      .modal-loading, .modal-msg {
+        padding-top: 35vh;
+      }
+      .white:hover {
+        color: #2b5797!important;
+        background-color: #ffffff!important;
+        border: none;
+      }
+    </style>
+    <script src="/static/js/config.js"></script>
+    <script src="/static/js/utils.js"></script>
+  </head>
+  <body id="body">
+    <div id="app"></div>
+
+    <!--modal loading-->
+    <div id="loading" class="w3-modal modal-loading">
+      <div class="w3-modal-content w3-round w3-padding-16" style="min-height: inherit">
+        <div style="padding-left: 20px">
+          <img src="/static/imgs/spinner-circle.svg" id="loading-image" class="fa-spin" style="width: 45px;height: 45px">
+          <span id="loading-text" class="w3-opacity" style="padding-left: 20px"></span>
+        </div>
+      </div>
+    </div>
+
+    <!--modal mensagem-->
+    <div id="modal-msg" class="w3-modal modal-msg">
+      <div class="w3-modal-content w3-round w3-padding-16" style="min-height: inherit">
+        <div style="padding: 20px 20px;color: #353535">
+          <b id="titulo-modal-msg" class="w3-large">Titulo</b><br>
+          <span id="msg-modal-msg"></span>
+        </div>
+        <div class="w3-margin-top">
+          <button class="w3-button w3-block white" style="color: #2b5797" onclick="document.getElementById('modal-msg').style.display='none'">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "c4ec06b5-1c44-4e97-b317-b7be2e11bbe8",
+        });
+      });
+    </script>
+
+  </body>
+</html>

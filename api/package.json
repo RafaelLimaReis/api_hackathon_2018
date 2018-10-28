@@ -1,0 +1,32 @@
+{
+  "name": "api_outsiders",
+  "version": "1.0.0",
+  "description": "api para aplicação mobile utilizar durante o hackaton 2018",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "database": "node ./sql/module/index.js --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://RafaelLimaReis@bitbucket.org/outsiders_unifacef/api.git"
+  },
+  "keywords": [
+    "API",
+    "NODE",
+    "EXPRESS"
+  ],
+  "author": "Time Outsiders",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.4",
+    "underscore": "^1.9.1"
+  }
+}

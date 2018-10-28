@@ -1,0 +1,114 @@
+Tabela Usuario
+-nome
+-email
+-senha
+-cidade
+-genero
+-data_nascimento
+-administrativo
+-token
+-fg-ativo
+
+#Novo usuario
+Usuario acessa o cadastro
+Informa os dados e clica em cadastrar.
+
+Sistema salva em usuario_temp com token que referencia o usuario. Ex usuario id 1 e token => fsdfs3dnfs423dnfa32erf3nsdfn
+Sistema dispara e-mail de confirmação
+
+Usuario confirma e-mail clicando no link enviado
+Sistema verifica de quem e o token na tabela usuario_temp e cadastra definitivo na tabela usuario (exclui os dados na tabela temp)
+Redireciona para tela de login
+
+#Recuperar Senha
+Usuario informa o email e clica em recuperar
+Sistema verifica se há cadastro e dispara um email com o token deste email.
+
+Usuario acessa email e clica no link de recuperacao
+Sitema verifica de quem é o token e redireciona para a tela de cadastro de nova senha
+Usuario cadastra nova senha
+
+=================================
+Tabela Secao
+-id_usuario
+-data_login
+
+#Tela de perfil (Usuário ADM)
+Visualiza ultimas listas cadastradas
+Visualiza Ranking de voluntarios que cadastram listas
+@menu
+	Perfil
+	Igrejas
+	Cidades
+	Listas
+	Listas Aprovação
+	Disparo de e-mail (MKT)
+
+#Tela de perfil (Usuário moderador)
+Visualiza ultimas listas cadastradas
+Visualiza Ranking de voluntarios que cadastram listas
+@menu
+	Perfil
+	Igrejas
+	Cidades
+	Listas
+	Listas Aprovação
+	
+#Tela de perfil (Usuário nao adm)
+Visualiza ultimas listas cadastradas (nao edita)
+Visualiza Ranking de voluntarios que cadastram listas
+@menu
+	Igrejas (Visualiza e apenas Cadastro)
+	Listas (Apenas Visualiza e edita listas que cadastrou e que ainda nao foram aprovadas)
+	Perfil (Altera dados pessoais)
+
+
+Usuario loga no sistema
+Sitema insere log da conexao na tabela Seção
+
+====================================
+Tabela Lista
+-
+-
+Tabela Servico
+-
+-
+
+Toda a tela funcionara com atalhos do teclado
+
+#Cadastro da lista
+Estado
+Mes
+Descricao
+Btn Cadastrar
+
+Lista Cadastrada com o publicado false
+
+#Cabecalho do cadastro Servico
+Btn Nova Lista
+Btn Salvar
+Upload do PDF
+(Somente adms)
+Btn Aprovar
+Inativar Lista
+
+#Tela de cadastro Servico
+Servico
+Estado
+Cidade
+Data e Hora
+Anciao
+Encarregado
+<br>
+Botao Inserir
+
+#Tabela de cultos da lista (Com editar e remover)
+Servico
+Estado
+Cidade
+Data e Hora
+Anciao
+Encarregado (Valida o servio Ensaio)
+
+
+
